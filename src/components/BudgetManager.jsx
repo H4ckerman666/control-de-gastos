@@ -27,19 +27,7 @@ const BudgetManager = ({
       0
     );
     let percent = ((spent / budget) * 100).toFixed(2);
-    console.log(
-      "🚀 ~ file: BudgetManager.jsx:23 ~ useEffect ~ ((spent / budget) * 100).toFixed(2)",
-      percent
-    );
-    console.log(
-      "🚀 ~ file: BudgetManager.jsx:28 ~ useEffect ~ percent ? percent : 0",
-      percent ? console.log("entra?", percent) : console.log("no")
-    );
     percent = percent ? percent : 0;
-    console.log(
-      "🚀 ~ file: BudgetManager.jsx:23 ~ useEffect ~ ((spent / budget) * 100).toFixed(2)",
-      percent
-    );
     setPercent(percent);
     setSpent(spent);
     setAvailableBudget(budget - spent);

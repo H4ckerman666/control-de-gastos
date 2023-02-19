@@ -25,7 +25,6 @@ const Modal = ({
   const handleAddExpense = (e) => {
     e.preventDefault();
     if ([name, amount, category].includes("")) {
-      console.log("Fallo la validación");
       setMessage("Todos los campos son obligatorios");
       setTimeout(() => {
         setMessage("");
