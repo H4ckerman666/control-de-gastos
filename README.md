@@ -23,4 +23,4 @@ Spanish
 
 <br/>
 
-_You can check this project <a href="expenditure-control.netlify.app" target="_blank">here</a>_
+_You can check this project <a href="https://expenditure-control.netlify.app/" target="_blank">here</a>_
