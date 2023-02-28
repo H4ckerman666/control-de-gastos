@@ -11,15 +11,14 @@ const Modal = ({
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
   const [amount, setAmount] = useState(0);
-  const [category, setCategory] = useState(0);
-
+  const [category, setCategory] = useState("");
   useEffect(() => {
-    if (!editExpense) {
+    if (Object.keys(editExpense).length === 0) {
       return;
     }
     setName(editExpense.name);
     setAmount(editExpense.amount);
-    setCategory(editExpense.category);
+    setCategory(editExpense.category ?? "");
   }, []);
 
   const handleAddExpense = (e) => {
@@ -75,7 +74,7 @@ const Modal = ({
           <label htmlFor="category">Categoría</label>
           <select
             id="category"
-            value={category}
+            value={category ?? ""}
             onChange={(e) => setCategory(e.target.value)}
           >
             <option value="">---Seleccione---</option>

@@ -16,7 +16,7 @@ function App() {
   );
   const [editExpense, setEditExpense] = useState(false);
   const [filter, setFilter] = useState("");
-  const [expenseFiltered, setExpenseFiltered] = useState("");
+  const [expenseFiltered, setExpenseFiltered] = useState([]);
 
   const handleModal = () => {
     setModal(true);
